@@ -14,29 +14,44 @@ struct RecipeListView: View {
     var body: some View {
         
         NavigationView {
-            List(model.recipes) { r in
+            
+            
+            VStack(alignment: .leading) {
+                Text("All Recipes")
+                    .bold()
+                    .padding(.top, 40)
+                    .font(.largeTitle)
                 
-                NavigationLink(
-                    destination: RecipeDetailView(recipe: r),
-                    label: {
-          
-                        // MARK: Row item
-                        HStack(spacing: 20.0) {
-                            Image(r.image)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 100, height: 100, alignment: .center)
-                                .clipped()
-                                .cornerRadius(10)
-                            Text(r.name)
-                                .font(.title)
+                ScrollView {
+                    LazyVStack (alignment: .leading) {
+                        ForEach (model.recipes) { r in
+                            
+                            NavigationLink(
+                                destination: RecipeDetailView(recipe: r),
+                                label: {
+                                    
+                                    // MARK: Row item
+                                    HStack(spacing: 20.0) {
+                                        Image(r.image)
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(width: 100, height: 100, alignment: .center)
+                                            .clipped()
+                                            .cornerRadius(10)
+                                        Text(r.name)
+                                            .foregroundColor(.black)
+                                            .font(.title)
+                                    }
+                                    
+                                })
+                            
+                            
                         }
-                        
-                    })
-                
-                
+                        .navigationBarHidden(true)
+                    }
+                }
             }
-            .navigationTitle("All Recipes")
+            .padding(.leading)
         }
     }
 }
