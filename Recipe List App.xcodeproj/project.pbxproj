@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC8CAF3125E5D294006278F2 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8CAF3025E5D294006278F2 /* Rational.swift */; };
 		FC97F6DD25E5344B008DAEA2 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97F6DC25E5344B008DAEA2 /* RecipeDetailView.swift */; };
 		FC97F71825E56032008DAEA2 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97F71725E56032008DAEA2 /* RecipeTabView.swift */; };
 		FC97F73B25E596F6008DAEA2 /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97F73A25E596F6008DAEA2 /* RecipeFeaturedView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC8CAF3025E5D294006278F2 /* Rational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
 		FC97F6DC25E5344B008DAEA2 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		FC97F71725E56032008DAEA2 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 		FC97F73A25E596F6008DAEA2 /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC8CAF2E25E5D1D0006278F2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FC8CAF3025E5D294006278F2 /* Rational.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		FCA2C57B25E4A670008756A6 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 				FCA2C59A25E4A6C7008756A6 /* Models */,
 				FCA2C59C25E4A6D0008756A6 /* Services */,
 				FCA2C59B25E4A6CB008756A6 /* Data */,
+				FC8CAF2E25E5D1D0006278F2 /* Utilities */,
 				FCA2C58B25E4A671008756A6 /* Assets.xcassets */,
 				FCA2C59025E4A671008756A6 /* Info.plist */,
 				FCA2C58D25E4A671008756A6 /* Preview Content */,
@@ -202,6 +213,7 @@
 			files = (
 				FCA2C5A825E4A825008756A6 /* Recipe.swift in Sources */,
 				FC97F6DD25E5344B008DAEA2 /* RecipeDetailView.swift in Sources */,
+				FC8CAF3125E5D294006278F2 /* Rational.swift in Sources */,
 				FCA2C5AB25E4A900008756A6 /* RecipeModel.swift in Sources */,
 				FCA2C58A25E4A670008756A6 /* RecipeListView.swift in Sources */,
 				FCA2C58825E4A670008756A6 /* Recipe_List_App.swift in Sources */,
